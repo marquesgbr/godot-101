@@ -1,10 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://qp4nvdxgd8ci"]
+[gd_scene load_steps=4 format=3 uid="uid://qp4nvdxgd8ci"]
 
 [ext_resource type="Script" uid="uid://cvfq1pw4voudj" path="res://scripts/hud.gd" id="1_wfueu"]
+
+[sub_resource type="FontVariation" id="FontVariation_wfueu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f1f40"]
+font = SubResource("FontVariation_wfueu")
+font_color = Color(0.337077, 0.920896, 0.97379, 0.894118)
+shadow_size = 19
+shadow_color = Color(0.0392157, 0.247059, 0.741176, 0.223529)
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_wfueu")
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+visibility_layer = 3
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 145.0
+offset_bottom = 27.0
+text = "Gemas coletadas: "
+label_settings = SubResource("LabelSettings_f1f40")

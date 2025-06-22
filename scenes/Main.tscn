@@ -9,9 +9,10 @@
 script = ExtResource("1_elqb8")
 
 [node name="Player" parent="." instance=ExtResource("2_rarhs")]
-position = Vector2(56, 37)
+position = Vector2(73, 68)
 
 [node name="Item" parent="." instance=ExtResource("3_vcsgt")]
-position = Vector2(220, 101)
+position = Vector2(257, 130)
 
 [node name="HUD" parent="." instance=ExtResource("4_c01mt")]
+layer = 2

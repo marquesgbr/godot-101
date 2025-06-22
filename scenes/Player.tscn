@@ -134,11 +134,12 @@ size = Vector2(30, 50)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_yu4nf")
+speed = 250.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_viqgg")
 animation = &"idle"
-frame_progress = 0.971697
+frame_progress = 0.889907
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, 7)
