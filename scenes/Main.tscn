@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c6liein22kxgs"]
+[gd_scene load_steps=4 format=3 uid="uid://c6liein22kxgs"]
 
 [ext_resource type="Script" uid="uid://0nicht8paifr" path="res://scripts/main.gd" id="1_elqb8"]
 [ext_resource type="PackedScene" uid="uid://ltp8xicpm57s" path="res://scenes/Player.tscn" id="2_rarhs"]
-[ext_resource type="PackedScene" uid="uid://bwllt1ykjwi8k" path="res://scenes/Item.tscn" id="3_vcsgt"]
 [ext_resource type="PackedScene" uid="uid://qp4nvdxgd8ci" path="res://scenes/Hud.tscn" id="4_c01mt"]
 
 [node name="Node2D" type="Node2D"]
@@ -10,9 +9,6 @@ script = ExtResource("1_elqb8")
 
 [node name="Player" parent="." instance=ExtResource("2_rarhs")]
 position = Vector2(73, 68)
-
-[node name="Item" parent="." instance=ExtResource("3_vcsgt")]
-position = Vector2(257, 130)
 
 [node name="HUD" parent="." instance=ExtResource("4_c01mt")]
 layer = 2
